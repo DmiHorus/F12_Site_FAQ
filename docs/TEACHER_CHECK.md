@@ -8,8 +8,8 @@
 
 | Параметр | Значение |
 |---|---|
-| Адрес репозитория | `<заполнить после push>` |
-| Коммит | `<заполнить после commit>` |
+| Адрес репозитория | https://github.com/DmiHorus/F12_Site_FAQ |
+| Коммит | `f1b82cc613f880450640c53fb64936890dd69ddc` |
 | Сценарий ответа | `openai` |
 | Модель эмбеддингов | `text-embedding-3-small`, на диск не скачивается |
 | Локальная LLM (если есть) | не используется; генерация `gpt-4.1-mini` через OpenAI |
@@ -25,7 +25,7 @@
 macOS / Linux:
 
 ```bash
-git clone <адрес репозитория> F12_Site_FAQ
+git clone https://github.com/DmiHorus/F12_Site_FAQ.git F12_Site_FAQ
 cd F12_Site_FAQ
 python3.11 -m venv venv
 source venv/bin/activate
@@ -38,7 +38,7 @@ uvicorn backend.app:app --host 127.0.0.1 --port 8000
 Windows (PowerShell):
 
 ```powershell
-git clone <адрес репозитория> F12_Site_FAQ
+git clone https://github.com/DmiHorus/F12_Site_FAQ.git F12_Site_FAQ
 cd F12_Site_FAQ
 py -3.11 -m venv venv
 .\venv\Scripts\activate
