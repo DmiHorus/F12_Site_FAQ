@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Минвайл — компания и продукты{% endblock %}
+{% block content %}
+  <p class="eyebrow">Портфолио</p>
+  <h1>Минвайл</h1>
+  <p class="lead">Заказное прикладное ПО и готовые решения бизнес-задач. Ассистент на этом сайте отвечает только по базе из 40 вопросов.</p>
+  {% for block in blocks %}
+  <section class="card">
+    <h2>{{ block.title }}</h2>
+    <p>{{ block.answer }}</p>
+  </section>
+  {% endfor %}
+{% endblock %}

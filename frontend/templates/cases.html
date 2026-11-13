@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Кейсы Минвайл{% endblock %}
+{% block content %}
+  <p class="eyebrow">Продукты</p>
+  <h1>Кейсы</h1>
+  <p class="lead">Шесть направлений из базы знаний. Цифры приведены так, как они записаны в ответах FAQ.</p>
+  <div class="cards">
+    {% for card in cards %}
+    <article class="case-card">
+      <h2>{{ card.title }}</h2>
+      {% for part in card.parts %}
+      <p>{{ part }}</p>
+      {% endfor %}
+    </article>
+    {% endfor %}
+  </div>
+{% endblock %}

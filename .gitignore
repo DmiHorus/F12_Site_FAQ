@@ -1,0 +1,17 @@
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+data/faiss_index.bin
+data/faqs_metadata.*
+.cache/
+models/
+hf_cache/
+MNWL/
+FAQ_SOURCES.md
+.DS_Store
